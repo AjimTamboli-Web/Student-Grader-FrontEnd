@@ -20,7 +20,7 @@ const SignupForm = ({ onSignupSuccess, switchToLogin }) => {
     }),
     onSubmit: async (values, { setSubmitting, setErrors, resetForm }) => {
       try {
-        await axios.post("http://localhost:8080/students/signup", values);
+        await axios.post("https://student-grader-backend-production.up.railway.app/students/signup", values);
         setSuccessMessage("Signup successful! Please login.");
         resetForm();
         setTimeout(() => {

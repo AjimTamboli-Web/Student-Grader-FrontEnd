@@ -856,7 +856,7 @@ function AdminStudentData() {
     }
 
     setIsFetching(true);
-    const url = 'http://localhost:8080/admin/get-all-students';
+    const url = 'https://student-grader-backend-production.up.railway.appadmin/get-all-students';
     const basicAuth = 'Basic ' + btoa(username + ':' + password);
 
     try {
